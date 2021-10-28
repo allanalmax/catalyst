@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        margin-left: 70px;
+      }
+
+      form ul li label {
+        float: left;
+        clear: left;
+        width: 100px;
+        text-align: center;
+        margin-right: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+      }
+
+      form li {
+        list-style: none;
+        margin-bottom: 5px;
+      }
+
+      form ul li input select span {
+        float: left;
+        width: 300px;
+        height: 150px;
+      }
+
+      [type='submit'],
+      [type='reset'] {
+        clear: left;
+        margin: 20px 0 0 230px;
+        font-size: 18px;
+      }
+
+      p {
+        margin-left: 70px;
+        font-weight: bold;
+      }
+
+      textarea {
+        float: left;
+        width: 350px;
+        height: 150px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Registration Form</h1>
+    <form name="registration" id="form">
+      <ul>
+        <li><label for="userid">User ID:</label></li>
+        <li><input type="text" name="userid" size="12" /></li>
+
+        <li><label for="passid">User Password:</label></li>
+        <li><input type="password" name="userpass" size="12" /></li>
+
+        <li><label for="username">User Name:</label></li>
+        <li><input type="text" name="username" size="45" /></li>
+
+        <li><label for="useraddress">Address :</label></li>
+        <li><input type="text" name="address" size="30" /></li>
+
+        <li><label for="usercountry">Country:</label></li>
+        <li>
+          <select name="country">
+            <option selected="empty" value="Default">
+              Please select a country
+            </option>
+            <option value="UG">Uganda</option>
+            <option value="KY">Kenya</option>
+            <option value="TZ">Tanzania</option>
+            <option value="RW">Rwanda</option>
+            <option value="US">United States</option>
+            <option value="UK">United Kingdom</option>
+          </select>
+        </li>
+        <li><label for="useremail">Email :</label></li>
+        <li><input type="text" name="email" size="15" /></li>
+
+        <li><label for="userzip">ZIP Code :</label></li>
+        <li><input type="text" name="zip" size="20" /></li>
+
+        <li>
+          <label for="usergender">Gender :</label>
+          <input type="radio" id="msex" name="sex" value="male" /><span
+            >Male</span
+          >
+          <input type="radio" id="fsex" name="sex" value="female" /><span
+            >Female</span
+          >
+        </li>
+
+        <li>
+          <label>Language :</label>
+          <input type="checkbox" name="language" value="ENG" checked /><span
+            >English</span
+          >
+          <input type="checkbox" name="language" value="NONENG" checked /><span
+            >Arabic
+          </span>
+        </li>
+
+        <li><label for="descript">About :</label></li>
+        <li><textarea name="descrip"></textarea></li>
+
+        <li>
+          <input
+            type="submit"
+            name="submitbtn"
+            value="Submit"
+          />
+          <input type="reset" name="reset" value="Reset " />
+        </li>
+      </ul>
+    </form>
+    <script src="eventlistener.js"></script>
+  </body>
+</html>
