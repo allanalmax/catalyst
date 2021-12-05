@@ -1,4 +1,5 @@
-const validate = () => {
+const validate = (event) => {
+    // event.preventdefault();
     const userid = document.registration.userid;
     const userpass = document.registration.userpass;
     const username = document.registration.username;
@@ -53,3 +54,5 @@ const validate = () => {
 
     return true;
 };
+
+// validate();

@@ -1,12 +1,14 @@
-const usname = document.registration.usname;
+const usname = document.registration.username;
 const usid = document.registration.userid;
 const usemail = document.registration.useremail;
 const uspassword = document.registration.userpassword;
 
-const userid = () => {
+const userid = (event) => {
+    event.preventdefault();
     if (usid.value == '') {
         alert('enter user id')
         usid.focus();
+        usid.style.border = '2px solid red';
         return false;
     }
 };
